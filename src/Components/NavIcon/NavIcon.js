@@ -1,6 +1,5 @@
-import PropTypes from 'prop-types'
 import './navIcon.css'
-
+import proptypes from './navIcon.proptypes.js'
 /**
  * An icon contained in a square
  * @param {String} icon The icon file
@@ -16,10 +15,6 @@ function NavIcon(props) {
   )
 }
 
-// TODO: (mentor) On peut utiliser un plugin pour JSDOC comme better-doc?
-NavIcon.propTypes = {
-  icon: PropTypes.string,
-  name: PropTypes.string,
-}
+NavIcon.propTypes = proptypes
 
 export default NavIcon

@@ -1,4 +1,4 @@
-import LaterlNav from './Components/Aside/LateralNav'
+import LateralNav from './Components/LateralNav/LateralNav'
 import Header from './Components/Header/Header'
 import './app.css'
 function App() {
@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <Header />
       <main className="main">
-        <LaterlNav />
+        <LateralNav />
       </main>
     </div>
   )
