@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: NavIcon.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,42 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: NavIcon.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import PropTypes from 'prop-types'
+import './navIcon.css'
 
+/**
+ * An icon contained in a square
+ * @param {String} icon The icon file
+ * @param {String} name The icon alt text
+ */
+function NavIcon(props) {
+  const { icon, name } = props
 
-    <h3> </h3>
+  return (
+    &lt;div className="navIcon">
+      &lt;img src={icon} alt={name} />
+    &lt;/div>
+  )
+}
 
+NavIcon.propTypes = {
+  icon: PropTypes.string,
+  name: PropTypes.string,
+}
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default NavIcon
+</code></pre>
+        </article>
+    </section>
 
 
 
