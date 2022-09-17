@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  background-color: var(--black);
+  align-items: center;
+  height: 91px;
+}
+
+#main-logo {
+  height: 60px;
+  width: auto;
+  margin-left: 28px;
+}
