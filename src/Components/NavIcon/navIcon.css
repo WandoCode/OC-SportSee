@@ -1,0 +1,12 @@
+.navIcon {
+  background-color: white;
+  border-radius: 6px;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+}
+
+.navIcon img {
+  width: 100%;
+  object-fit: contain;
+}

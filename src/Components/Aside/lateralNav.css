@@ -1,0 +1,28 @@
+.lateralNav {
+  background-color: var(--black);
+  height: 100%;
+  width: 117px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.lateralNav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-basis: 60%;
+}
+.lateralNav li {
+  margin-bottom: 20px;
+}
+
+.lateralNav small {
+  margin-bottom: 60px;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-weight: 500;
+  font-size: 12px;
+}
