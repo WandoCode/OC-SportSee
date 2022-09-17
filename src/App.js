@@ -7,18 +7,15 @@ import './app.css'
 function App() {
   const [user, setUser] = useState({})
 
-  const fetchFromStore = async () => {
+  const loadUserInfos = async () => {
     const userInfos = await userStore.getUserInfos(12)
+    await userStore.getPerformance(12)
     setUser(userInfos)
   }
 
   useEffect(() => {
-    fetchFromStore()
+    loadUserInfos()
   }, [])
-
-  useEffect(() => {
-    console.log(user)
-  }, [user])
 
   //TODO: fetch username
   return (
