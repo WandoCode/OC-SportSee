@@ -2,22 +2,23 @@ import LateralNav from './Components/LateralNav/LateralNav'
 import Header from './Components/Header/Header'
 import userStore from './store/userStore'
 import { useEffect, useState } from 'react'
+
 import './app.css'
+import Histogram from './Components/Histogram/Histogram'
 
 function App() {
-  const [user, setUser] = useState({})
+  const userId = 12
+  const [user, setUser] = useState()
 
   const loadUserInfos = async () => {
-    const userInfos = await userStore.getUserInfos(12)
-    await userStore.getPerformance(12)
-    setUser(userInfos)
+    const rep = await userStore.getUserInfos(userId)
+    setUser(rep)
   }
 
   useEffect(() => {
     loadUserInfos()
   }, [])
 
-  //TODO: fetch username
   return (
     <div className="App">
       <Header />
@@ -29,6 +30,7 @@ function App() {
           </h1>
           <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
         </div>
+        <Histogram userId={userId} />
       </main>
     </div>
   )
