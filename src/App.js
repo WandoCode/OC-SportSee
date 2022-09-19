@@ -29,8 +29,8 @@ function App() {
             Bonjour <span className="red">{user?.userInfos?.firstName}</span>
           </h1>
           <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
+          <Histogram userId={userId} />
         </div>
-        <Histogram userId={userId} />
       </main>
     </div>
   )

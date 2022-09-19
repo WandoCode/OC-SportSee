@@ -1,0 +1,53 @@
+.histogram {
+  height: 250px;
+  width: 835px;
+}
+
+.recharts-bar.calories {
+  fill: var(--prim-color);
+}
+.recharts-bar.kilogram {
+  fill: var(--sec-color);
+}
+.svg-dot {
+  height: 8px;
+  width: 8px;
+  margin-right: 12px;
+}
+
+#svg-dot-calories {
+  fill: var(--prim-color);
+}
+#svg-dot-kilogram {
+  fill: var(--sec-color);
+}
+
+.graph-legend {
+  color: var(--text-light);
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 290px;
+}
+
+.recharts-legend-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.histogram-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.histogram-header h3 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.histogram tspan {
+  fill: var(--text-light);
+  font-weight: 500;
+  font-size: 14px;
+}
