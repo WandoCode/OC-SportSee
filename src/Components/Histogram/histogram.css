@@ -1,6 +1,6 @@
 .histogram {
   height: 250px;
-  width: 835px;
+  width: clamp(500px, 65vw, 835px);
 }
 
 .recharts-bar.calories {
