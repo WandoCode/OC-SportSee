@@ -2,9 +2,8 @@ import LateralNav from './Components/LateralNav/LateralNav'
 import Header from './Components/Header/Header'
 import userStore from './store/userStore'
 import { useEffect, useState } from 'react'
-
 import './app.css'
-import Histogram from './Components/Histogram/Histogram'
+import Charts from './Components/Charts/Charts'
 
 function App() {
   const userId = 12
@@ -29,7 +28,7 @@ function App() {
             Bonjour <span className="red">{user?.userInfos?.firstName}</span>
           </h1>
           <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
-          <Histogram userId={userId} />
+          <Charts userId={userId} />
         </div>
       </main>
     </div>

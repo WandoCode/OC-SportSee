@@ -1,6 +1,9 @@
 :root {
   --black: #020203;
+  --light: #fbfbfb;
   --prim-color: #e60000;
   --sec-color: #282d30;
-  --text-light: #74798c;
+  --text-light: #9b9eac;
+  --text-med: #74798c;
+  --text-dark: #20253a;
 }

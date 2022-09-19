@@ -1,53 +1,59 @@
 .histogram {
-  height: 250px;
+  padding: 24px 15px 40px 15px;
   width: clamp(500px, 65vw, 835px);
+  height: 320px;
 }
 
-.recharts-bar.calories {
+.histogram .recharts-bar.calories {
   fill: var(--prim-color);
 }
-.recharts-bar.kilogram {
+.histogram .recharts-bar.kilogram {
   fill: var(--sec-color);
-}
-.svg-dot {
-  height: 8px;
-  width: 8px;
-  margin-right: 12px;
-}
-
-#svg-dot-calories {
-  fill: var(--prim-color);
-}
-#svg-dot-kilogram {
-  fill: var(--sec-color);
-}
-
-.graph-legend {
-  color: var(--text-light);
-  font-weight: 500;
-  font-size: 14px;
-  display: flex;
-  justify-content: space-between;
-  width: 290px;
-}
-
-.recharts-legend-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.histogram-header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.histogram-header h3 {
-  font-weight: 500;
-  font-size: 15px;
 }
 
 .histogram tspan {
   fill: var(--text-light);
   font-weight: 500;
   font-size: 14px;
+}
+
+.histogram .chart-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: var(--text-light);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.histogram .chart-header h3 {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--text-dark);
+}
+.histogram .chart-header figcaption {
+  color: var(--text-med);
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+}
+.histogram .chart-header img {
+  margin-right: 8px;
+}
+
+.histogram .graph-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.histogram-tooltip {
+  background-color: var(--prim-color);
+  color: white;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.histogram-tooltip li {
+  padding: 10px;
+  text-align: center;
 }
