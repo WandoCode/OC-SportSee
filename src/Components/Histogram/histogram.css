@@ -17,7 +17,7 @@
   font-size: 14px;
 }
 
-.histogram .chart-header {
+.histogram .histogram-header {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -26,18 +26,16 @@
   font-size: 14px;
 }
 
-.histogram .chart-header h3 {
-  font-weight: 500;
-  font-size: 15px;
+.histogram .histogram-header h3 {
   color: var(--text-dark);
 }
-.histogram .chart-header figcaption {
+.histogram .histogram-header figcaption {
   color: var(--text-med);
   display: flex;
   justify-content: space-between;
   width: 33%;
 }
-.histogram .chart-header img {
+.histogram .histogram-header img {
   margin-right: 8px;
 }
 

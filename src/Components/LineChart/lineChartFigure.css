@@ -1,0 +1,17 @@
+.lineChart {
+  height: 260px;
+  width: 260px;
+}
+
+.lineChart h3 {
+  padding: 29px 77px 0 34px;
+  opacity: 0.5;
+  color: white;
+}
+
+.lineChart tspan {
+  fill: white;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 12px;
+}
