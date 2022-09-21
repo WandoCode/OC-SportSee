@@ -19,7 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "jsdoc": "jsdoc -r ./src"
+    "jsdoc": "jsdoc -r ./src",
+    "dev": "set REACT_APP_.DATAS=mock& npm start"
   },
   "eslintConfig": {
     "extends": [

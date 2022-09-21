@@ -47,12 +47,12 @@ function Histogram({ userId }) {
 
   const loadUserActivity = async () => {
     const rep = await userStore.getActivity(userId)
-
-    const lastTenSessions = getLastTenSessions(rep.sessions)
+    console.log(rep)
+    const lastTenSessions = getLastTenSessions(rep)
     setUserActivity(lastTenSessions)
 
     const maxCalories = Math.max(
-      ...rep.sessions.map((sess) => {
+      ...rep.map((sess) => {
         return sess.calories
       })
     )
