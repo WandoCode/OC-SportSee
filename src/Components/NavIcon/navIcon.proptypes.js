@@ -5,5 +5,4 @@ const propTypes = {
   name: PropTypes.string,
 }
 
-// TODO: (mentor) On peut utiliser un plugin pour JSDOC comme better-doc?
 export default propTypes
