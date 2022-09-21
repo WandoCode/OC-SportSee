@@ -57,6 +57,7 @@ function LineChartFigure({ userId }) {
             padding={{ left: 10, right: 10 }}
           />
           <YAxis hide />
+
           <defs>
             <linearGradient id="colorUv" x1="0%" y1="0%" x2="100%" y2="0%">
               <stop offset="0%" stopColor="#FF6B6B" />
@@ -64,6 +65,7 @@ function LineChartFigure({ userId }) {
               <stop offset="100%" stopColor="#FCE4E4" />
             </linearGradient>
           </defs>
+
           <Line
             type="monotone"
             dataKey="sessionLength"
