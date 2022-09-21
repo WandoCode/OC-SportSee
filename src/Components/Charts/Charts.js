@@ -1,12 +1,14 @@
 import Histogram from '../Histogram/Histogram'
-import LineChart from '../LineChart/LineChartFigure'
+import LineChart from '../LineChartFigure/LineChartFigure'
+import PieChartFigure from '../PieChartFigure/PieChartFigure'
 import './charts.css'
 
-function Charts({ userId }) {
+function Charts({ user }) {
   return (
     <section className="charts">
-      <Histogram userId={userId} />
-      <LineChart userId={userId} />
+      <Histogram user={user} />
+      <LineChart user={user} />
+      <PieChartFigure user={user} />
     </section>
   )
 }

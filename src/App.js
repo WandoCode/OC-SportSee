@@ -4,13 +4,17 @@ import userStore from './store/userStore'
 import { useEffect, useState } from 'react'
 import './app.css'
 import Charts from './Components/Charts/Charts'
+import DataFormatter from './Utils/DataFormatter/DataFormatter'
 
 function App() {
   const userId = 12
   const [user, setUser] = useState()
 
   const loadUserInfos = async () => {
-    const rep = await userStore.getUserInfos(userId)
+    const datas = new DataFormatter(userId)
+    await datas.loadDatas()
+
+    const rep = datas.getFormattedDatas()
     setUser(rep)
     console.log(rep)
   }
@@ -29,7 +33,7 @@ function App() {
             Bonjour <span className="red">{user?.userInfos?.firstName}</span>
           </h1>
           <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
-          <Charts userId={userId} />
+          {user && <Charts user={user} />}
         </div>
       </main>
     </div>
@@ -39,3 +43,5 @@ function App() {
 export default App
 //TODO: (mentor) -> Structure des fichiers correcte?
 //TODO: (mentor) -> Fichier de style avec les composants?
+//TODO: (mentor) -> Proptype?
+//TODO: (mentor) -> Modelisation des données: il faut valider les données reçues? ou juste composer un nouvel objet adapté à notre app avec les objets reçus?

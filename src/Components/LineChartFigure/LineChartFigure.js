@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import {
   ResponsiveContainer,
   LineChart,
@@ -7,38 +6,15 @@ import {
   Line,
   Tooltip,
 } from 'recharts'
-import userStore from '../../store/userStore'
 import './lineChartFigure.css'
 
-function LineChartFigure({ userId }) {
-  const weekDaysAbrv = ['L', 'M', 'M', 'J', 'V', 'S', 'D']
-  const [avgSessions, setAvgSessions] = useState()
-
-  const nameSessionDays = (sessions) => {
-    return sessions.map((sess) => {
-      return {
-        day: weekDaysAbrv.at(sess.day - 1),
-        sessionLength: sess.sessionLength,
-      }
-    })
-  }
-
-  const getAvgSessions = async () => {
-    const rep = await userStore.getAvgSession(userId)
-    const sessionsWithNamedDays = nameSessionDays(rep.sessions)
-    setAvgSessions(sessionsWithNamedDays)
-  }
-
-  useEffect(() => {
-    getAvgSessions()
-  }, [])
-
+function LineChartFigure({ user }) {
   return (
     <figure className="lineChart chart chart-red">
       <h3>Durée moyenne des sessions</h3>
       <ResponsiveContainer height="100%" width="100%">
         <LineChart
-          data={avgSessions}
+          data={user.avgSessions}
           margin={{
             top: 5,
             right: 0,

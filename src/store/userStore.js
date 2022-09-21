@@ -51,7 +51,6 @@ const getAvgSession = async (userId) => {
 
 const getPerformance = async (userId) => {
   if (mockDatas) {
-    console.log(Performance)
     const rep = Performance.find((perf) => {
       return perf.userId === userId
     })

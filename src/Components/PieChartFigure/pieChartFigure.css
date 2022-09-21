@@ -1,0 +1,4 @@
+.pie {
+  width: clamp(500px, 65vw, 835px);
+  height: 320px;
+}

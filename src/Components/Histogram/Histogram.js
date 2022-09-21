@@ -10,7 +10,6 @@ import {
 } from 'recharts'
 import OvalBlack from '../../Assets/Oval.svg'
 import OvalRed from '../../Assets/OvalRed.svg'
-import userStore from '../../store/userStore'
 import './histogram.css'
 
 function renderTooltip({ payload }) {
@@ -31,37 +30,17 @@ function renderTooltip({ payload }) {
   )
 }
 
-const getLastTenSessions = (sessions) => {
-  let rep
-  if (sessions.length > 10) {
-    rep = sessions.slice(sessions.length - 10, sessions.length)
-  } else {
-    rep = sessions
-  }
-  return rep
-}
-
-function Histogram({ userId }) {
-  const [userActivity, setUserActivity] = useState()
+function Histogram({ user }) {
   const [domainCalories, setDomainCalories] = useState()
 
-  const loadUserActivity = async () => {
-    const rep = await userStore.getActivity(userId)
-    console.log(rep)
-    const lastTenSessions = getLastTenSessions(rep)
-    setUserActivity(lastTenSessions)
-
+  useEffect(() => {
     const maxCalories = Math.max(
-      ...rep.map((sess) => {
+      ...user.sessions.map((sess) => {
         return sess.calories
       })
     )
     setDomainCalories([0, maxCalories + 30])
-  }
-
-  useEffect(() => {
-    loadUserActivity()
-  }, [])
+  }, [user])
 
   return (
     <figure className="histogram chart">
@@ -76,9 +55,10 @@ function Histogram({ userId }) {
           </div>
         </figcaption>
       </div>
+
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
-          data={userActivity}
+          data={user.sessions}
           margin={{
             top: 62,
             right: 0,
