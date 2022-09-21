@@ -12,6 +12,7 @@ function App() {
   const loadUserInfos = async () => {
     const rep = await userStore.getUserInfos(userId)
     setUser(rep)
+    console.log(rep)
   }
 
   useEffect(() => {
@@ -36,3 +37,5 @@ function App() {
 }
 
 export default App
+//TODO: (mentor) -> Structure des fichiers correcte?
+//TODO: (mentor) -> Fichier de style avec les composants?
