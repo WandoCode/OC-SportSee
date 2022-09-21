@@ -3,7 +3,8 @@ import Users from '../mock/user.mock.json'
 import Activity from '../mock/activity.mock.json'
 import AvgSessions from '../mock/avgSessions.mock.json'
 import Performance from '../mock/performance.mock.json'
-const mockDatas = process.env.REACT_APP_.DATAS === 'mock'
+
+const mockDatas = process.env.REACT_APP_DATAS === 'mock'
 
 const BASE_URL = 'http://localhost:3000/user/'
 
