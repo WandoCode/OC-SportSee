@@ -8,11 +8,11 @@
 .charts-container {
   display: flex;
   flex-direction: column;
-  gap: 5%;
 }
 .charts-subcontainer {
   display: flex;
   justify-content: space-between;
+  margin-top: 5%;
 }
 .chart {
   background-color: var(--light);
