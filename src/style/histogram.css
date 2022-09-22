@@ -29,6 +29,7 @@
 .histogram .histogram-header h3 {
   color: var(--text-dark);
 }
+
 .histogram .histogram-header figcaption {
   color: var(--text-med);
   display: flex;

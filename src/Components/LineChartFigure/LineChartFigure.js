@@ -7,6 +7,14 @@ import {
   Tooltip,
 } from 'recharts'
 
+const renderTooltip = ({ payload }) => {
+  if (payload.length) {
+    console.log(payload)
+    return <div className="lineChart-tooltip">{payload[0]?.value}min</div>
+  }
+  return null
+}
+
 function LineChartFigure({ user }) {
   return (
     <figure className="lineChart chart chart-red chart-small">
@@ -21,7 +29,11 @@ function LineChartFigure({ user }) {
             bottom: 80,
           }}
         >
-          <Tooltip cursor={false} />
+          <Tooltip
+            cursor={false}
+            content={renderTooltip}
+            wrapperStyle={{ outline: 0 }}
+          />
           <XAxis
             dataKey="day"
             axisLine={false}
