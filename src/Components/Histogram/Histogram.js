@@ -10,7 +10,6 @@ import {
 } from 'recharts'
 import OvalBlack from '../../Assets/Oval.svg'
 import OvalRed from '../../Assets/OvalRed.svg'
-import './histogram.css'
 
 function renderTooltip({ payload }) {
   return (

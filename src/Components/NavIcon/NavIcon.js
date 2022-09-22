@@ -1,5 +1,5 @@
-import './navIcon.css'
 import proptypes from './navIcon.proptypes.js'
+
 /**
  * An icon contained in a square
  * @param {String} icon The icon file

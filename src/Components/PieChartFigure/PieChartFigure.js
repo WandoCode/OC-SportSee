@@ -1,5 +1,4 @@
 import { ResponsiveContainer, RadialBar, RadialBarChart } from 'recharts'
-import './pieChartFigure.css'
 
 function PieChartFigure({ user }) {
   return (

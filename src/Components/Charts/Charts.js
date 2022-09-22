@@ -1,7 +1,6 @@
 import Histogram from '../Histogram/Histogram'
 import LineChart from '../LineChartFigure/LineChartFigure'
 import PieChartFigure from '../PieChartFigure/PieChartFigure'
-import './charts.css'
 
 function Charts({ user }) {
   return (

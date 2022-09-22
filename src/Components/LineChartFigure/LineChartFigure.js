@@ -6,7 +6,6 @@ import {
   Line,
   Tooltip,
 } from 'recharts'
-import './lineChartFigure.css'
 
 function LineChartFigure({ user }) {
   return (

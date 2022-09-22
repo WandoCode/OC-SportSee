@@ -1,0 +1,11 @@
+@import './boilerplate.css';
+@import './variables.css';
+@import './app.css';
+@import './header.css';
+@import './charts.css';
+@import './histogram.css';
+@import './lineChartFigure.css';
+@import './pieChartFigure.css';
+@import './navIcon.css';
+@import './nav.css';
+@import './lateralNav.css';
