@@ -1,3 +1,17 @@
+.charts {
+  display: flex;
+  gap: 32px;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.charts-subcontainer {
+  display: flex;
+  justify-content: space-between;
+}
 .chart {
   background-color: var(--light);
   border-radius: 5px;
@@ -31,6 +45,10 @@
   font-size: 15px;
 }
 
-.charts-subcontainer {
+.details {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  flex-grow: 1;
 }

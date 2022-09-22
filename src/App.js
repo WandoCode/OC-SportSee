@@ -40,7 +40,3 @@ function App() {
 }
 
 export default App
-//TODO: (mentor) -> Structure des fichiers correcte?
-//TODO: (mentor) -> Fichier de style avec les composants?
-//TODO: (mentor) -> Proptype?
-//TODO: (mentor) -> Modelisation des données: il faut valider les données reçues? ou juste composer un nouvel objet adapté à notre app avec les objets reçus?
