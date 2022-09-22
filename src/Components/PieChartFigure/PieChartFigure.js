@@ -19,7 +19,7 @@ function PieChartFigure({ user }) {
   }
 
   return (
-    <figure className="pie chart chart chart-small">
+    <figure className="pie chart chart-small">
       <h3>Score</h3>
       <ResponsiveContainer width="100%" height="100%">
         <RadialBarChart

@@ -17,6 +17,10 @@
   opacity: 0.1;
 }
 
+.chart-dark {
+  background-color: var(--sec-color);
+}
+
 .chart-small {
   height: 260px;
   width: 260px;

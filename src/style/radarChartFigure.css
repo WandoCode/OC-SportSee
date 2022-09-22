@@ -1,0 +1,14 @@
+.radar .recharts-polar-grid-angle {
+  opacity: 0;
+}
+
+.radar .recharts-radar-polygon {
+  fill: var(--prim-color);
+  opacity: 0.7;
+}
+
+.radar tspan {
+  fill: white;
+  font-weight: 400;
+  font-size: 12px;
+}
