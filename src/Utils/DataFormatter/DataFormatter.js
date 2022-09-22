@@ -69,9 +69,17 @@ class DataFormatter {
   getFormattedPerformances = () => {
     const rawPerf = this.userPerformance.data
     const kindPerf = this.userPerformance.kind
+    const kindTranslate = {
+      energy: 'Energie',
+      cardio: 'Cardio',
+      endurance: 'Endurance',
+      strength: 'Force',
+      speed: 'Vitesse',
+      intensity: 'Intensité',
+    }
 
     return rawPerf.map((perf) => {
-      return { data: perf.value, kind: kindPerf[perf.kind] }
+      return { data: perf.value, kind: kindTranslate[kindPerf[perf.kind]] }
     })
   }
 }
