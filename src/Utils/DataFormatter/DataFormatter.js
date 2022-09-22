@@ -27,7 +27,7 @@ class DataFormatter {
       userId: this.id,
       userInfos: this.userInfos.userInfos,
       score: this.getFormatteScoreDatas(),
-      nutrition: this.userInfos.keyData,
+      nutrition: this.getFormattedNutrition(),
       sessions: this.getLastTenSessions(),
       avgSessions: this.getNameSessionDays(),
       performance: this.getFormattedPerformances(),
@@ -35,6 +35,24 @@ class DataFormatter {
     return formattedDatas
   }
 
+  getFormattedNutrition = () => {
+    return {
+      calorieCount: this.formatNumber(this.userInfos.keyData.calorieCount),
+      proteinCount: this.formatNumber(this.userInfos.keyData.proteinCount),
+      carbohydrateCount: this.formatNumber(
+        this.userInfos.keyData.carbohydrateCount
+      ),
+      lipidCount: this.formatNumber(this.userInfos.keyData.lipidCount),
+    }
+  }
+  formatNumber = (num) => {
+    const strNum = String(num)
+    if (strNum.length > 3) {
+      return strNum.slice(0, 1).concat(',', strNum.slice(1))
+    } else {
+      return strNum
+    }
+  }
   getLastTenSessions = () => {
     let rep
     if (this.userActivity.length > 10) {
