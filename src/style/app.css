@@ -4,6 +4,12 @@
   flex-direction: column;
 }
 
+.App h1 {
+  margin-bottom: 40px;
+}
+.App .red {
+  color: var(--prim-color);
+}
 .main {
   display: flex;
   flex-grow: 1;

@@ -1,6 +1,7 @@
 .charts {
   display: flex;
   gap: 32px;
+  margin-top: 77px;
 }
 
 .charts-container {

@@ -15,7 +15,6 @@ function App() {
 
     const rep = datas.getFormattedDatas()
     setUser(rep)
-    console.log(rep)
   }
 
   useEffect(() => {
@@ -31,7 +30,7 @@ function App() {
           <h1>
             Bonjour <span className="red">{user?.userInfos?.firstName}</span>
           </h1>
-          <h2>Félicitation ! Vous avez explosé vos objectifs hier 👏</h2>
+          <h2>Félicitations ! Vous avez explosé vos objectifs hier 👏</h2>
           {user && <Charts user={user} />}
         </div>
       </main>
