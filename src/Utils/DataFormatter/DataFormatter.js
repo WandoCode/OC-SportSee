@@ -30,6 +30,7 @@ class DataFormatter {
       nutrition: this.userInfos.keyData,
       sessions: this.getLastTenSessions(),
       avgSessions: this.getNameSessionDays(),
+      performance: this.getFormattedPerformances(),
     }
     return formattedDatas
   }
@@ -63,6 +64,15 @@ class DataFormatter {
       { id: 2, todayScore: 100, opacity: 0 },
       { id: 1, todayScore: score * 100, fill: '#E60000' },
     ]
+  }
+
+  getFormattedPerformances = () => {
+    const rawPerf = this.userPerformance.data
+    const kindPerf = this.userPerformance.kind
+
+    return rawPerf.map((perf) => {
+      return { data: perf.value, kind: kindPerf[perf.kind] }
+    })
   }
 }
 
