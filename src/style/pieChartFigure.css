@@ -1,10 +1,13 @@
 .pie {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .pie h3 {
   position: absolute;
-  top: 15%;
-  left: 12%;
+  top: 13%;
+  left: 10%;
 }
 .pie .pieLegend {
   text-align: center;

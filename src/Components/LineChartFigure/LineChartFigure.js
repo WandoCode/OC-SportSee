@@ -18,7 +18,9 @@ const renderTooltip = ({ payload }) => {
 function LineChartFigure({ user }) {
   return (
     <figure className="lineChart chart chart-red chart-small">
-      <h3>Durée moyenne des sessions</h3>
+      <h3>
+        Durée moyenne des <br /> sessions
+      </h3>
       <ResponsiveContainer height="100%" width="100%">
         <LineChart
           data={user.avgSessions}

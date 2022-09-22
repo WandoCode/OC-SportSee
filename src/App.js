@@ -6,7 +6,7 @@ import Charts from './Components/Charts/Charts'
 import DataFormatter from './Utils/DataFormatter/DataFormatter'
 
 function App() {
-  const userId = 12
+  const userId = 18
   const [user, setUser] = useState()
 
   const loadUserInfos = async () => {

@@ -1,12 +1,15 @@
 .navIcon {
   background-color: white;
   border-radius: 6px;
-  width: 64px;
-  height: 64px;
-  padding: 16px;
+  width: clamp(55px, 4.5vw, 64px);
+  height: clamp(55px, 4.5vw, 64px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navIcon img {
-  width: 100%;
+  width: 55%;
   object-fit: contain;
 }

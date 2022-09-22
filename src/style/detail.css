@@ -1,10 +1,10 @@
 .detail {
   display: flex;
   align-items: center;
-  gap: 24px;
-  width: 258px;
+  gap: 9.3%;
+  width: clamp(200px, 18vw, 258px);
   height: 124px;
-  padding-left: 24px;
+  padding-left: 9.5%;
   background-color: var(--light);
 }
 
@@ -35,7 +35,7 @@
 
 .detail-value {
   font-weight: 700;
-  font-size: 20px;
+  font-size: clamp(17px, 1.38vw, 20px);
 }
 
 .detail-description {

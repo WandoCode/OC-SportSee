@@ -1,7 +1,7 @@
 .histogram {
   padding: 24px 15px 40px 15px;
   width: clamp(500px, 65vw, 835px);
-  height: 320px;
+  height: clamp(300px, 23vw, 320px);
 }
 
 .histogram .recharts-bar.calories {

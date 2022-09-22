@@ -29,7 +29,7 @@ function LaterlNav() {
           </a>
         </li>
       </ul>
-      <small>Copiryght, SportSee 2020</small>
+      <small>Copyright, SportSee 2020</small>
     </nav>
   )
 }

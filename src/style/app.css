@@ -5,7 +5,14 @@
 }
 
 .App h1 {
-  margin-bottom: 40px;
+  margin-bottom: 3.5%;
+  font-weight: 500;
+  font-size: clamp(35px, 3.4vw, 48px);
+}
+.App h2 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
 }
 .App .red {
   color: var(--prim-color);
@@ -16,5 +23,5 @@
 }
 
 .main-container {
-  margin: auto;
+  margin: 2% auto;
 }
