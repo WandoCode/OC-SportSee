@@ -17,7 +17,16 @@
   opacity: 0.1;
 }
 
+.chart-small {
+  height: 260px;
+  width: 260px;
+}
+
 .chart h3 {
   font-weight: 500;
   font-size: 15px;
+}
+
+.charts-subcontainer {
+  display: flex;
 }

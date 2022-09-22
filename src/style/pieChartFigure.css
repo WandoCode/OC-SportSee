@@ -1,4 +1,23 @@
 .pie {
-  width: clamp(500px, 65vw, 835px);
-  height: 320px;
+  position: relative;
+}
+.pie h3 {
+  position: absolute;
+  top: 15%;
+  left: 12%;
+}
+.pie .pieLegend {
+  text-align: center;
+  width: fit-content;
+  margin: auto;
+  font-weight: 500;
+  font: 16px;
+  line-height: 26px;
+  color: var(--text-light);
+}
+
+.pie .pieLegend .bold {
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--black);
 }

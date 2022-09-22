@@ -60,8 +60,8 @@ class DataFormatter {
   getFormatteScoreDatas = () => {
     const score = this.userInfos.score || this.userInfos.todayScore
     return [
-      { id: 2, todayScore: 1, opacity: 0 },
-      { id: 1, todayScore: score, fill: '#E60000' },
+      { id: 2, todayScore: 100, opacity: 0 },
+      { id: 1, todayScore: score * 100, fill: '#E60000' },
     ]
   }
 }

@@ -1,6 +1,5 @@
 import LateralNav from './Components/LateralNav/LateralNav'
 import Header from './Components/Header/Header'
-import userStore from './store/userStore'
 import { useEffect, useState } from 'react'
 
 import Charts from './Components/Charts/Charts'

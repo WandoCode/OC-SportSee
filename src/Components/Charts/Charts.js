@@ -6,8 +6,10 @@ function Charts({ user }) {
   return (
     <section className="charts">
       <Histogram user={user} />
-      <LineChart user={user} />
-      <PieChartFigure user={user} />
+      <div className="charts-subcontainer">
+        <LineChart user={user} />
+        <PieChartFigure user={user} />
+      </div>
     </section>
   )
 }

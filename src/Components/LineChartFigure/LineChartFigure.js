@@ -9,7 +9,7 @@ import {
 
 function LineChartFigure({ user }) {
   return (
-    <figure className="lineChart chart chart-red">
+    <figure className="lineChart chart chart-red chart-small">
       <h3>Durée moyenne des sessions</h3>
       <ResponsiveContainer height="100%" width="100%">
         <LineChart
