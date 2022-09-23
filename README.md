@@ -24,7 +24,7 @@ Generate the JSDOC documentation for the project.
 
 ### `npm run dev`
 
-Launch the app using only mocked datas: no backend needed.
+Launch the app in devloppement mode using only mocked datas: no backend needed.
 
 ### `npm run build`
 
