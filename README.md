@@ -28,7 +28,7 @@ This project is mainly based on the following technologies:
 - Run `npm install` to install all dependancies
 - Run `npm start` or `npm run dev` to launch the application
 
-## Available Scripts
+## Scripts
 
 In the project directory, you can run:
 
@@ -42,11 +42,11 @@ You may also see any lint errors in the console.
 
 ### `npm run dev`
 
-Launch the app in devloppement mode using only mocked datas: no backend needed.
+Launch the app like `npm start` but using only mocked datas: no backend needed.
 
 ### `npm run jsdoc`
 
-Generate the JSDOC documentation for the project in the `./out` directory
+Generate the JSDOC documentation for the project in the `./out` directory.
 
 ### `npm run build`
 
