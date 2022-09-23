@@ -4,7 +4,7 @@ This project contain the source code for [SportSee](https://openclassrooms.com/f
 
 ## Prerequisite
 
-- [NodeJS v16.14.2 or better](https://nodejs.org/en/)
+- [NodeJS](https://nodejs.org/en/) v16.14.2 or better
 
 ### Backend
 
