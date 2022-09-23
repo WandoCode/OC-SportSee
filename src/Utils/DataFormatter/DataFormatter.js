@@ -1,5 +1,5 @@
 import userStore from '../../store/userStore'
-import Nutrition from './Nutrition'
+
 /**
  * @class
  * @classdesc Call user information information from API to produce an object with all the datas formatted for the components's project
@@ -39,19 +39,50 @@ class DataFormatter {
   /**
    * Create an object with all the formatted datas about the user coming from the API
    * @function
-   * @return {User} The complete and formated user's informations
+   * @return {User}
    */
   getFormattedDatas = () => {
     const formattedDatas = {
       userId: this.id,
       userInfos: this.userInfos.userInfos,
       score: this.getFormattedScoreDatas(),
-      nutrition: new Nutrition(this.userInfos.keyData).getFormattedNutrition(),
+      nutrition: this.getFormattedNutrition(),
       sessions: this.getLastTenSessions(),
       avgSessions: this.getNameSessionDays(),
       performance: this.getFormattedPerformances(),
     }
     return formattedDatas
+  }
+
+  /**
+   * Format nutrition information recieved from API
+   * @function
+   * @return {Nutrition} Nutritional informations
+   */
+  getFormattedNutrition = () => {
+    return {
+      calorieCount: this.formatNumber(this.userInfos.keyData.calorieCount),
+      proteinCount: this.formatNumber(this.userInfos.keyData.proteinCount),
+      carbohydrateCount: this.formatNumber(
+        this.userInfos.keyData.carbohydrateCount
+      ),
+      lipidCount: this.formatNumber(this.userInfos.keyData.lipidCount),
+    }
+  }
+
+  /**
+   * Add a comma as thousand separator
+   * @function
+   * @param {number} num The number to format
+   * @returns {string} The number as a string with the separator if needed
+   */
+  formatNumber = (num) => {
+    const strNum = String(num)
+    if (strNum.length > 3) {
+      return strNum.slice(0, 1).concat(',', strNum.slice(1))
+    } else {
+      return strNum
+    }
   }
 
   /**
@@ -124,6 +155,15 @@ class DataFormatter {
 }
 
 export default DataFormatter
+
+/**
+ *  @typedef {Object} Nutrition
+ * Nutrition informations about the user
+ * @property {string} calorieCount Amount of calory
+ * @property {string} proteinCount Amount of protein
+ * @property {string} carbohydrateCount Amount of carbohydrate
+ * @property {string} lipidCount Amount of lipid
+ */
 
 /**
  *  @typedef {Object} Session
