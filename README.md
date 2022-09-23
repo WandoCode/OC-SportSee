@@ -1,6 +1,6 @@
 # Installation
 
-npm install
+`npm install`
 
 ## Backend
 
