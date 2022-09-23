@@ -7,6 +7,8 @@ import {
   Radar,
 } from 'recharts'
 
+import propTypesDef from './radarChartFigure.proptypes'
+
 function RadarChartFigure({ user }) {
   return (
     <figure className="radar chart chart-dark chart-small">
@@ -26,5 +28,7 @@ function RadarChartFigure({ user }) {
     </figure>
   )
 }
+
+RadarChartFigure.propTypes = propTypesDef
 
 export default RadarChartFigure

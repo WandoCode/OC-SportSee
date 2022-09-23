@@ -7,6 +7,7 @@ import Calory from '../../Assets/calory.png'
 import Protein from '../../Assets/protein.png'
 import Glucid from '../../Assets/glucide.png'
 import Lipid from '../../Assets/lipide.png'
+import propTypesDef from './Charts.proptypes'
 
 /** @namespace Charts */
 /**
@@ -57,4 +58,5 @@ function Charts({ user }) {
   )
 }
 
+Charts.propTypes = propTypesDef
 export default Charts

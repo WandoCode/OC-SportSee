@@ -1,4 +1,4 @@
-import proptypes from './navIcon.proptypes.js'
+import propTypesDef from './navIcon.proptypes.js'
 
 /** @namespace NavIcon */
 /**
@@ -15,6 +15,6 @@ function NavIcon({ icon, name }) {
   )
 }
 
-NavIcon.propTypes = proptypes
+NavIcon.propTypes = propTypesDef
 
 export default NavIcon

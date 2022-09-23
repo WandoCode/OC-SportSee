@@ -8,8 +8,11 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts'
+
 import OvalBlack from '../../Assets/Oval.svg'
 import OvalRed from '../../Assets/OvalRed.svg'
+import propTypesDef from './Histogram.proptypes'
+
 /** @namespace Histogram */
 /**
  * Function generating the tooltip for Recharts Tooltip component
@@ -124,5 +127,7 @@ function Histogram({ user }) {
     </figure>
   )
 }
+
+Histogram.propTypes = propTypesDef
 
 export default Histogram

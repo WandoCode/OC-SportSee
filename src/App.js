@@ -26,7 +26,6 @@ function App() {
 
     const rep = datas.getFormattedDatas()
     setUser(rep)
-    console.log(rep)
   }
 
   useEffect(() => {

@@ -7,6 +7,8 @@ import {
   Tooltip,
 } from 'recharts'
 
+import propTypesDef from './LineChartFigure.proptypes'
+
 /** @namespace LineChart */
 /**
  * Function generating the tooltip for Recharts Tooltip component
@@ -80,5 +82,7 @@ function LineChartFigure({ user }) {
     </figure>
   )
 }
+
+LineChartFigure.propTypes = propTypesDef
 
 export default LineChartFigure

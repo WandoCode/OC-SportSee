@@ -1,9 +1,10 @@
+import propTypesDef from './Detail.proptypes'
 /** @namespace Detail */
 /**
  * React component generating a small icon and description of a specific food category
  * @memberof Detail
  * @param {String} value The value to display
- * @param {File} icon The file of the icon to use
+ * @param {String} icon The file of the icon to use
  * @param {String} description The food category
  * @param {String} unit The unit associated the the value
  */
@@ -20,5 +21,7 @@ function Detail({ value, icon, description, unit }) {
     </div>
   )
 }
+
+Detail.propTypes = propTypesDef
 
 export default Detail

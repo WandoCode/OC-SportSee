@@ -1,4 +1,15 @@
 import userStore from '../../store/userStore'
+/**
+ * @typedef {Object} User
+ * Information and statistic aubout the user
+ * @property {integer} userId The userId in database
+ * @property {UserInfos} userInfos User's personal informations
+ * @property {Session[]} sessions The 10 last session of the user
+ * @property {Score[]} score The score of the user and a reference
+ * @property {Performance[]} performance The performance of the user in each kind of category
+ * @property {AvgSessions[]} avgSessions The average sessions for each day of the week
+ * @property {Nutrition} nutrition The nutrition informations of the user
+ */
 
 /**
  * @class
@@ -202,16 +213,4 @@ export default DataFormatter
  * @property {string} firstName The user's first name
  * @property {string} lastName The user's last name
  * @property {integer} age The user's age
- */
-
-/**
- * @typedef {Object} User
- * Information and statistic aubout the user
- * @property {integer} userId The userId in database
- * @property {UserInfos} userInfos User's personal informations
- * @property {Session[]} sessions The 10 last session of the user
- * @property {Score[]} score The score of the user and a reference
- * @property {Performance[]} performance The performance of the user in each kind of category
- * @property {AvgSessions[]} avgSessions The average sessions for each day of the week
- * @property {Nutrition} nutrition The nutrition informations of the user
  */

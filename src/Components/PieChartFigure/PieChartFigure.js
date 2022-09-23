@@ -5,6 +5,8 @@ import {
   Legend,
 } from 'recharts'
 
+import propTypesDef from './pieChartFigure.proptypes'
+
 function PieChartFigure({ user }) {
   const renderLegend = () => {
     return (
@@ -36,5 +38,7 @@ function PieChartFigure({ user }) {
     </figure>
   )
 }
+
+PieChartFigure.propTypes = propTypesDef
 
 export default PieChartFigure
