@@ -96,37 +96,42 @@
     
 
     
-        <h3 class="subsection-title">Methods</h3>
+
+    
+        <h3 class="subsection-title">Type Definitions</h3>
 
         
-            
+                
+<h4 class="name" id="AvgSessions">AvgSessions</h4>
 
-    
-
-    
-    <h4 class="name" id="NavIcon"><span class="type-signature"></span>NavIcon<span class="signature">(icon, name)</span><span class="type-signature"></span></h4>
-    
-
-    
 
 
 
 <div class="description">
-    An icon contained in a square
+    Informations about the average sessions of the user organized by weekday
 </div>
 
 
 
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
 
 
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
-    <h5>Parameters:</h5>
     
 
-<table class="params">
+<table class="props">
     <thead>
     <tr>
         
@@ -148,13 +153,13 @@
 
         <tr>
             
-                <td class="name"><code>icon</code></td>
+                <td class="name"><code>day</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
             
@@ -164,20 +169,20 @@
 
             
 
-            <td class="description last">The icon file</td>
+            <td class="description last">Week day (Monday => Sunday)</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>sessionLength</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">number</span>
 
 
             
@@ -187,14 +192,12 @@
 
             
 
-            <td class="description last">The icon alt text</td>
+            <td class="description last">Average session length</td>
         </tr>
 
     
     </tbody>
 </table>
-
-
 
 
 
@@ -228,7 +231,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="NavIcon.js.html">NavIcon.js</a>, <a href="NavIcon.js.html#line9">line 9</a>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line176">line 176</a>
     </li></ul></dd>
     
 
@@ -244,23 +247,1365 @@
 
 
 
+            
+                
+<h4 class="name" id="Nutrition">Nutrition</h4>
+
+
+
+
+<div class="description">
+    Nutrition informations about the user
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
 
 
 
 
 
+    <h5 class="subsection-title">Properties:</h5>
 
-
-
-
-
-
-
-
-
-        
     
 
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>calorieCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount of calory</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>proteinCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount of protein</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>carbohydrateCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount of carbohydrate</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lipidCount</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount of lipid</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line159">line 159</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="Performance">Performance</h4>
+
+
+
+
+<div class="description">
+    Informations about the user's performance
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>data</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The performance for the given category</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>kind</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The category</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line192">line 192</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="Score">Score</h4>
+
+
+
+
+<div class="description">
+    Informations about the user's score and display option associated
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>id</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">An id used by the charts generator</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>todayScore</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number(0-100)</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">The user's score</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fill</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">The color that will be linked to the given score</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>opacity</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last">The opacity that will be linked to the given score</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line183">line 183</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="Session">Session</h4>
+
+
+
+
+<div class="description">
+    Infomrmations about the last 10 sessions of the user
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>day</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Date of the session</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>kilogram</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Weight in kg at the date</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>calories</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Amount of burned calories</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line168">line 168</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="StoreFunctions">StoreFunctions</h4>
+
+
+
+
+<div class="description">
+    Functions of the userStore factory function to manage interaction with API for users
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>getUserInfos()</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Get user personnal informations from database</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>getActivity()</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Get user activity informations from database</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>getAvgSession()</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Get user average sessions informations from database</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>getPerformance()</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Get user performance informations from database</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="store_userStore.js.html">store/userStore.js</a>, <a href="store_userStore.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="User">User</h4>
+
+
+
+
+<div class="description">
+    Information and statistic aubout the user
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>userId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The userId in database</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>userInfos</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#UserInfos">UserInfos</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">User's personal informations</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sessions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="global.html#Session">Session</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The 10 last session of the user</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>score</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="global.html#Score">Score</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The score of the user and a reference</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>performance</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="global.html#Performance">Performance</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The performance of the user in each kind of category</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>avgSessions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;<a href="global.html#AvgSessions">AvgSessions</a>></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The average sessions for each day of the week</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>nutrition</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="global.html#Nutrition">Nutrition</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The nutrition informations of the user</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line207">line 207</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
+                
+<h4 class="name" id="UserInfos">UserInfos</h4>
+
+
+
+
+<div class="description">
+    Personal nformations about the user
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">Object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>firstName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The user's first name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>lastName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The user's last name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>age</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The user's age</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Utils_DataFormatter_DataFormatter.js.html">Utils/DataFormatter/DataFormatter.js</a>, <a href="Utils_DataFormatter_DataFormatter.js.html#line199">line 199</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+            
     
 
     
@@ -274,13 +1619,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#NavIcon">NavIcon</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="App.html">App</a></li><li><a href="Charts.html">Charts</a></li><li><a href="Detail.html">Detail</a></li><li><a href="Header.html">Header</a></li><li><a href="Histogram.html">Histogram</a></li><li><a href="LaterlNav.html">LaterlNav</a></li><li><a href="LineChart.html">LineChart</a></li><li><a href="Nav.html">Nav</a></li><li><a href="NavIcon.html">NavIcon</a></li><li><a href="userStore.html">userStore</a></li></ul><h3>Classes</h3><ul><li><a href="DataFormatter.html">DataFormatter</a></li></ul><h3><a href="global.html">Global</a></h3>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Sat Sep 17 2022 17:47:24 GMT+0200 (heure d’été d’Europe centrale)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Fri Sep 23 2022 16:48:12 GMT+0200 (heure d’été d’Europe centrale)
 </footer>
 
 <script> prettyPrint(); </script>

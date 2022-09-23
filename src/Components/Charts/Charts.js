@@ -8,6 +8,12 @@ import Protein from '../../Assets/protein.png'
 import Glucid from '../../Assets/glucide.png'
 import Lipid from '../../Assets/lipide.png'
 
+/** @namespace Charts */
+/**
+ * React component generating the complete display of user statistics
+ * @memberof Charts
+ * @param {User} user The user informations
+ */
 function Charts({ user }) {
   return (
     <section className="charts">

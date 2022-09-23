@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: Components/LateralNav/LateralNav.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,59 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: Components/LateralNav/LateralNav.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import NavIcon from '../NavIcon/NavIcon'
+import yoga from '../../Assets/yoga.png'
+import swim from '../../Assets/swim.png'
+import bike from '../../Assets/bike.png'
+import fitness from '../../Assets/fitness.png'
+/** @namespace LaterlNav */
+/**
+ * React component generating the lateral navigation
+ * @memberof LaterlNav
+ */
+function LaterlNav() {
+  return (
+    &lt;nav className="lateralNav">
+      &lt;ul>
+        &lt;li>
+          &lt;a href="#">
+            &lt;NavIcon icon={yoga} name="yoga" />
+          &lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a href="#">
+            &lt;NavIcon icon={swim} name="swim" />
+          &lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a href="#">
+            &lt;NavIcon icon={bike} name="bike" />
+          &lt;/a>
+        &lt;/li>
+        &lt;li>
+          &lt;a href="#">
+            &lt;NavIcon icon={fitness} name="fitness" />
+          &lt;/a>
+        &lt;/li>
+      &lt;/ul>
+      &lt;small>Copyright, SportSee 2020&lt;/small>
+    &lt;/nav>
+  )
+}
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default LaterlNav
+</code></pre>
+        </article>
+    </section>
 
 
 

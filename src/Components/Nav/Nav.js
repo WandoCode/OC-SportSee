@@ -1,3 +1,8 @@
+/** @namespace Nav */
+/**
+ * React component generating the main navigation
+ * @memberof Nav
+ */
 function Nav() {
   return (
     <nav className="nav">

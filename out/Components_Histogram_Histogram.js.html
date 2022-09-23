@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Components/Histogram/Histogram.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Components/Histogram/Histogram.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useState, useEffect } from 'react'
+import {
+  BarChart,
+  Bar,
+  CartesianGrid,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+} from 'recharts'
+import OvalBlack from '../../Assets/Oval.svg'
+import OvalRed from '../../Assets/OvalRed.svg'
+/** @namespace Histogram */
+/**
+ * Function generating the tooltip for Recharts Tooltip component
+ * @memberof Histogram
+ * @param {Object[]} payload Informations about the points at the current position defined by Recharts
+ * @param {string} payload.dataKey Data category of the informations contained in the current object, defined by Recharts
+ * @param {string} payload.unit Unit associated to the value in the current object, defined by Recharts
+ * @param {number} payload.value Value of current point, defined by Recharts
+ * @returns {HTMLElement} HTML element displayed as the tooltip for the Histogram component
+ */
+function renderTooltip({ payload }) {
+  return (
+    &lt;div className="histogram-tooltip">
+      &lt;ul>
+        {payload.map((entry, value) => {
+          const unit = entry.dataKey === 'calories' ? 'Kcal' : 'kg'
+          return (
+            &lt;li key={value}>
+              {entry.value}
+              {unit}
+            &lt;/li>
+          )
+        })}
+      &lt;/ul>
+    &lt;/div>
+  )
+}
+
+/**
+ * React component generating a double bar histogram
+ * @memberof Histogram
+ * @param {User} user User informations
+ */
+function Histogram({ user }) {
+  const [domainCalories, setDomainCalories] = useState()
+
+  useEffect(() => {
+    const maxCalories = Math.max(
+      ...user.sessions.map((sess) => {
+        return sess.calories
+      })
+    )
+    setDomainCalories([0, maxCalories + 30])
+  }, [user])
+
+  return (
+    &lt;figure className="histogram chart">
+      &lt;div className="histogram-header">
+        &lt;h3>Activité quotidienne&lt;/h3>
+        &lt;figcaption>
+          &lt;div>
+            &lt;img src={OvalBlack} alt="" /> Poids (kg)
+          &lt;/div>
+          &lt;div>
+            &lt;img src={OvalRed} alt="" /> Calories brûlées (kCal)
+          &lt;/div>
+        &lt;/figcaption>
+      &lt;/div>
+
+      &lt;ResponsiveContainer width="100%" height="100%">
+        &lt;BarChart
+          data={user.sessions}
+          margin={{
+            top: 62,
+            right: 0,
+            left: 31,
+            bottom: 5,
+          }}
+        >
+          &lt;CartesianGrid strokeDasharray="1 4" vertical={false} />
+          &lt;YAxis
+            dataKey="kilogram"
+            tickCount={3}
+            yAxisId="kilogram"
+            orientation="right"
+            axisLine={false}
+            tickMargin={30}
+            tickLine={false}
+          />
+
+          &lt;YAxis
+            dataKey="calories"
+            hide={true}
+            domain={domainCalories}
+            yAxisId="calories"
+          />
+
+          &lt;XAxis
+            dataKey="day"
+            padding={{ left: -27, right: -27 }}
+            tickMargin={16}
+            tickLine={false}
+          />
+          &lt;Tooltip content={renderTooltip} wrapperStyle={{ outline: 0 }} />
+
+          &lt;Bar
+            dataKey="kilogram"
+            className="kilogram"
+            yAxisId="kilogram"
+            barSize={7}
+            radius={[3.5, 3.5, 0, 0]}
+          />
+          &lt;Bar
+            dataKey="calories"
+            className="calories"
+            yAxisId="calories"
+            barSize={7}
+            radius={[3.5, 3.5, 0, 0]}
+          />
+        &lt;/BarChart>
+      &lt;/ResponsiveContainer>
+    &lt;/figure>
+  )
+}
+
+export default Histogram
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="App.html">App</a></li><li><a href="Charts.html">Charts</a></li><li><a href="Detail.html">Detail</a></li><li><a href="Header.html">Header</a></li><li><a href="Histogram.html">Histogram</a></li><li><a href="LaterlNav.html">LaterlNav</a></li><li><a href="LineChart.html">LineChart</a></li><li><a href="Nav.html">Nav</a></li><li><a href="NavIcon.html">NavIcon</a></li><li><a href="userStore.html">userStore</a></li></ul><h3>Classes</h3><ul><li><a href="DataFormatter.html">DataFormatter</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.11</a> on Fri Sep 23 2022 16:48:12 GMT+0200 (heure d’été d’Europe centrale)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

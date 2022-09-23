@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: Components/Detail/Detail.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,42 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: Components/Detail/Detail.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/** @namespace Detail */
+/**
+ * React component generating a small icon and description of a specific food category
+ * @memberof Detail
+ * @param {String} value The value to display
+ * @param {File} icon The file of the icon to use
+ * @param {String} description The food category
+ * @param {String} unit The unit associated the the value
+ */
+function Detail({ value, icon, description, unit }) {
+  return (
+    &lt;div className={`detail ${description.toLowerCase()}`}>
+      &lt;div className="img-wrapper">
+        &lt;img src={icon} alt="calories" />
+      &lt;/div>
+      &lt;div className="detail-text">
+        &lt;div className="detail-value">{`${value}${unit}`} &lt;/div>
+        &lt;div className="detail-description">{description}&lt;/div>
+      &lt;/div>
+    &lt;/div>
+  )
+}
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Detail
+</code></pre>
+        </article>
+    </section>
 
 
 

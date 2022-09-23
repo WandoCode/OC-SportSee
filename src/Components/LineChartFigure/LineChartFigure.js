@@ -7,14 +7,26 @@ import {
   Tooltip,
 } from 'recharts'
 
+/** @namespace LineChart */
+/**
+ * Function generating the tooltip for Recharts Tooltip component
+ * @memberof LineChart
+ * @param {Object[]} payload Informations about the current point defined by Recharts
+ * @param {Number} payload[0].value Value of a given point
+ * @returns {HTMLElement|null} HTML element displayed as the tooltip for the LineChartFigure component
+ */
 const renderTooltip = ({ payload }) => {
   if (payload.length) {
-    console.log(payload)
     return <div className="lineChart-tooltip">{payload[0]?.value}min</div>
   }
   return null
 }
 
+/**
+ * React component generating the line chart with all his dependencies
+ * @memberof LineChart
+ * @param {User} user Informations about the user
+ */
 function LineChartFigure({ user }) {
   return (
     <figure className="lineChart chart chart-red chart-small">

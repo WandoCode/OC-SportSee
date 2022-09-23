@@ -10,7 +10,16 @@ import {
 } from 'recharts'
 import OvalBlack from '../../Assets/Oval.svg'
 import OvalRed from '../../Assets/OvalRed.svg'
-
+/** @namespace Histogram */
+/**
+ * Function generating the tooltip for Recharts Tooltip component
+ * @memberof Histogram
+ * @param {Object[]} payload Informations about the points at the current position defined by Recharts
+ * @param {string} payload.dataKey Data category of the informations contained in the current object, defined by Recharts
+ * @param {string} payload.unit Unit associated to the value in the current object, defined by Recharts
+ * @param {number} payload.value Value of current point, defined by Recharts
+ * @returns {HTMLElement} HTML element displayed as the tooltip for the Histogram component
+ */
 function renderTooltip({ payload }) {
   return (
     <div className="histogram-tooltip">
@@ -29,6 +38,11 @@ function renderTooltip({ payload }) {
   )
 }
 
+/**
+ * React component generating a double bar histogram
+ * @memberof Histogram
+ * @param {User} user User informations
+ */
 function Histogram({ user }) {
   const [domainCalories, setDomainCalories] = useState()
 

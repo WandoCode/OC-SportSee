@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: Components/Header/Header.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,35 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: Components/Header/Header.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import Nav from '../Nav/Nav'
+import logo from '../../Assets/logo.png'
+/** @namespace Header */
+/**
+ * React component generating the header of the website
+ * @memberof Header
+ */
+function Header() {
+  return (
+    &lt;header className="header">
+      &lt;img id="main-logo" src={logo} alt="" />
+      &lt;Nav />
+    &lt;/header>
+  )
+}
 
-
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export default Header
+</code></pre>
+        </article>
+    </section>
 
 
 
