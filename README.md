@@ -4,7 +4,7 @@
 
 ## Backend
 
-This project is made to be used with a [dedicated backend](https://github.com/WandoCode/P9-front-end-dashboard)
+This project is made to be used with a [dedicated backend](https://github.com/WandoCode/P9-front-end-dashboard).
 
 ## Available Scripts
 
