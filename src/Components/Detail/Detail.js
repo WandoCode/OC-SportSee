@@ -1,4 +1,5 @@
 import propTypesDef from './Detail.proptypes'
+
 /** @namespace Detail */
 /**
  * React component generating a small icon and description of a specific food category

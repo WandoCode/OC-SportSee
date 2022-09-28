@@ -1,5 +1,6 @@
 import Nav from '../Nav/Nav'
 import logo from '../../Assets/logo.png'
+
 /** @namespace Header */
 /**
  * React component generating the header of the website
@@ -8,7 +9,7 @@ import logo from '../../Assets/logo.png'
 function Header() {
   return (
     <header className="header">
-      <img id="main-logo" src={logo} alt="" />
+      <img id="main-logo" src={logo} alt="logo" />
       <Nav />
     </header>
   )

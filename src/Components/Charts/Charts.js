@@ -1,12 +1,14 @@
+import Lipid from '../../Assets/lipide.png'
+import Calory from '../../Assets/calory.png'
+import Glucid from '../../Assets/glucide.png'
+import Protein from '../../Assets/protein.png'
+
 import Detail from '../Detail/Detail'
 import Histogram from '../Histogram/Histogram'
 import LineChart from '../LineChartFigure/LineChartFigure'
 import PieChartFigure from '../PieChartFigure/PieChartFigure'
 import RadarChartFigure from '../RadarChartFigure/RadarChartFigure'
-import Calory from '../../Assets/calory.png'
-import Protein from '../../Assets/protein.png'
-import Glucid from '../../Assets/glucide.png'
-import Lipid from '../../Assets/lipide.png'
+
 import propTypesDef from './Charts.proptypes'
 
 /** @namespace Charts */

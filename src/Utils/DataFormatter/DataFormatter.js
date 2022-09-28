@@ -1,7 +1,7 @@
 import userStore from '../../store/userStore'
 /**
  * @typedef {Object} User
- * Information and statistic aubout the user
+ * Information and statistic about the user
  * @property {integer} userId The userId in database
  * @property {UserInfos} userInfos User's personal informations
  * @property {Session[]} sessions The 10 last session of the user
@@ -28,7 +28,7 @@ class DataFormatter {
   }
 
   /**
-   * Load all the datas from the API
+   * Load all the datas from the API and keep them in the current instance
    * @async
    * @function
    */

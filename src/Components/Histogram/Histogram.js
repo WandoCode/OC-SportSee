@@ -11,6 +11,7 @@ import {
 
 import OvalBlack from '../../Assets/Oval.svg'
 import OvalRed from '../../Assets/OvalRed.svg'
+
 import propTypesDef from './Histogram.proptypes'
 
 /** @namespace Histogram */
@@ -64,10 +65,10 @@ function Histogram({ user }) {
         <h3>Activité quotidienne</h3>
         <figcaption>
           <div>
-            <img src={OvalBlack} alt="" /> Poids (kg)
+            <img src={OvalBlack} alt="legend poids" /> Poids (kg)
           </div>
           <div>
-            <img src={OvalRed} alt="" /> Calories brûlées (kCal)
+            <img src={OvalRed} alt="legend calories" /> Calories brûlées (kCal)
           </div>
         </figcaption>
       </div>

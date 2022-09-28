@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 
 import Header from './Components/Header/Header'
-import LateralNav from './Components/LateralNav/LateralNav'
 import Charts from './Components/Charts/Charts'
+import LateralNav from './Components/LateralNav/LateralNav'
 import DataFormatter from './Utils/DataFormatter/DataFormatter'
+
 /**
  * @namespace App
  */
