@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: pie;
+  place-self: end;
 }
 .pie h3 {
   position: absolute;

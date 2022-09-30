@@ -1,11 +1,11 @@
 .detail {
   display: flex;
   align-items: center;
-  gap: 9.3%;
-  width: clamp(200px, 18vw, 258px);
-  height: 124px;
-  padding-left: 9.5%;
+  gap: 24px;
+  width: 260px;
+  height: 125px;
   background-color: var(--light);
+  padding: 32px;
 }
 
 .detail .img-wrapper {

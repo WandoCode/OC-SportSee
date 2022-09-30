@@ -17,5 +17,6 @@
   padding: 5px;
 }
 .lineChart {
+  grid-area: line;
   overflow: hidden;
 }

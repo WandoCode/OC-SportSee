@@ -20,16 +20,10 @@ import propTypesDef from './Charts.proptypes'
 function Charts({ user }) {
   return (
     <section className="charts">
-      <div className="charts-container">
-        <div className="charts-container">
-          <Histogram user={user} />
-          <div className="charts-subcontainer">
-            <LineChart user={user} />
-            <RadarChartFigure user={user} />
-            <PieChartFigure user={user} />
-          </div>
-        </div>
-      </div>
+      <Histogram user={user} />
+      <LineChart user={user} />
+      <RadarChartFigure user={user} />
+      <PieChartFigure user={user} />
       <div className="details">
         <Detail
           icon={Calory}

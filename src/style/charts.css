@@ -1,19 +1,18 @@
 .charts {
-  display: flex;
-  gap: 3%;
-  margin-top: 7%;
-  margin-bottom: 0;
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'histogram histogram histogram details'
+    'line radar pie details';
+  gap: 30px;
 }
 
-.charts-container {
-  display: flex;
-  flex-direction: column;
-}
 .charts-subcontainer {
   display: flex;
-  justify-content: space-between;
-  margin-top: 5%;
 }
+
 .chart {
   background-color: var(--light);
   border-radius: 5px;
@@ -23,7 +22,7 @@
   position: relative;
 }
 .chart-red::before {
-  content: ' ';
+  content: '';
   position: absolute;
   top: 0;
   bottom: 0;
@@ -38,8 +37,8 @@
 }
 
 .chart-small {
-  height: clamp(220px, 19vw, 260px);
-  width: clamp(220px, 19vw, 260px);
+  height: 260px;
+  width: 260px;
 }
 
 .chart h3 {
@@ -48,8 +47,10 @@
 }
 
 .details {
+  grid-area: details;
+  max-width: 260px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-grow: 1;
 }
