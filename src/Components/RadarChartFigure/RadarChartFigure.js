@@ -15,7 +15,7 @@ function RadarChartFigure({ user }) {
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart
           data={user.performance}
-          outerRadius={85}
+          outerRadius="70%"
           startAngle={210}
           endAngle={570}
         >

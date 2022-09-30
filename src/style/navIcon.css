@@ -1,8 +1,8 @@
 .navIcon {
   background-color: white;
   border-radius: 6px;
-  width: clamp(55px, 4.5vw, 64px);
-  height: clamp(55px, 4.5vw, 64px);
+  max-width: clamp(50px, 4.5vw, 64px);
+  height: clamp(50px, 4.5vw, 64px);
   margin: auto;
   display: flex;
   align-items: center;

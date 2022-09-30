@@ -77,7 +77,7 @@ function Histogram({ user }) {
         <BarChart
           data={user.sessions}
           margin={{
-            top: 62,
+            top: 52,
             right: 0,
             left: 31,
             bottom: 5,

@@ -11,3 +11,12 @@
   width: auto;
   margin: 15px 28px;
 }
+
+@media (max-width: 1250px) {
+  .header {
+    height: 55px;
+  }
+  #main-logo {
+    height: 40px;
+  }
+}

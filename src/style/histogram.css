@@ -56,3 +56,11 @@
   padding: 10px;
   text-align: center;
 }
+@media (max-width: 1250px) {
+  .histogram {
+    height: 260px;
+  }
+  .histogram .histogram-header figcaption {
+    width: 40%;
+  }
+}

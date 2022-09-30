@@ -17,9 +17,8 @@
   font-size: 12px;
 }
 
-@media (max-width: 1200px) {
-  .radar tspan {
-    font-weight: 400;
-    font-size: 10px;
+@media (max-width: 1250px) {
+  .radar {
+    place-self: start;
   }
 }

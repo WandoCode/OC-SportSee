@@ -28,8 +28,8 @@ function PieChartFigure({ user }) {
           startAngle={560}
           endAngle={200}
           data={user.score}
-          outerRadius={93}
-          innerRadius={73}
+          outerRadius={90}
+          innerRadius={70}
         >
           <RadialBar dataKey="todayScore" cornerRadius={10} />
           <Legend verticalAlign="middle" content={renderLegend} />
