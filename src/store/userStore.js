@@ -38,10 +38,14 @@ function userStore(userId) {
       })
       return rep
     } else {
-      const datas = await axios.get(BASE_URL + `${userId}`)
-      const userInfo = datas.data
+      try {
+        const datas = await axios.get(BASE_URL + `${userId}`)
+        const userInfo = datas.data
 
-      return userInfo.data
+        return userInfo.data
+      } catch (err) {
+        throw new Error(err)
+      }
     }
   }
 
@@ -58,10 +62,14 @@ function userStore(userId) {
       })
       return rep.sessions
     } else {
-      const datas = await axios.get(BASE_URL + `${userId}/activity`)
-      const activity = datas.data
+      try {
+        const datas = await axios.get(BASE_URL + `${userId}/activity`)
+        const activity = datas.data
 
-      return activity.data.sessions
+        return activity.data.sessions
+      } catch (err) {
+        throw new Error(err)
+      }
     }
   }
 
@@ -78,9 +86,13 @@ function userStore(userId) {
       })
       return rep.sessions
     } else {
-      const datas = await axios.get(BASE_URL + `${userId}/average-sessions`)
-      const avgSession = datas.data
-      return avgSession.data.sessions
+      try {
+        const datas = await axios.get(BASE_URL + `${userId}/average-sessions`)
+        const avgSession = datas.data
+        return avgSession.data.sessions
+      } catch (err) {
+        throw new Error(err)
+      }
     }
   }
 
@@ -97,9 +109,13 @@ function userStore(userId) {
       })
       return rep
     } else {
-      const datas = await axios.get(BASE_URL + `${userId}/performance`)
-      const performance = datas.data
-      return performance.data
+      try {
+        const datas = await axios.get(BASE_URL + `${userId}/performance`)
+        const performance = datas.data
+        return performance.data
+      } catch (err) {
+        throw new Error(err)
+      }
     }
   }
 
