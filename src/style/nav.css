@@ -5,6 +5,7 @@
 .nav ul {
   display: flex;
   justify-content: space-evenly;
+
   color: white;
   font-weight: 500;
   font-size: 24px;

@@ -1,24 +1,30 @@
 .pie {
+  grid-area: pie;
+  place-self: end;
+
   position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  grid-area: pie;
-  place-self: end;
 }
+
 .pie h3 {
   position: absolute;
   top: 13%;
   left: 10%;
 }
+
 .pie .pieLegend {
-  text-align: center;
   width: fit-content;
+
   margin: auto;
+
   font-weight: 500;
   font: 16px;
-  line-height: 26px;
   color: var(--text-light);
+  line-height: 26px;
+  text-align: center;
 }
 
 .pie .pieLegend .bold {

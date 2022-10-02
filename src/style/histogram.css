@@ -1,12 +1,15 @@
 .histogram {
   grid-area: histogram;
-  padding: 24px 15px 40px 15px;
+
   height: 320px;
+
+  padding: 24px 15px 40px 15px;
 }
 
 .histogram .recharts-bar.calories {
   fill: var(--prim-color);
 }
+
 .histogram .recharts-bar.kilogram {
   fill: var(--sec-color);
 }
@@ -18,9 +21,11 @@
 }
 
 .histogram .histogram-header {
+  width: 100%;
+
   display: flex;
   justify-content: space-between;
-  width: 100%;
+
   color: var(--text-light);
   font-weight: 500;
   font-size: 14px;
@@ -31,11 +36,14 @@
 }
 
 .histogram .histogram-header figcaption {
-  color: var(--text-med);
+  width: 33%;
+
   display: flex;
   justify-content: space-between;
-  width: 33%;
+
+  color: var(--text-med);
 }
+
 .histogram .histogram-header img {
   margin-right: 8px;
 }
@@ -56,10 +64,12 @@
   padding: 10px;
   text-align: center;
 }
+
 @media (max-width: 1250px) {
   .histogram {
     height: 260px;
   }
+
   .histogram .histogram-header figcaption {
     width: 40%;
   }

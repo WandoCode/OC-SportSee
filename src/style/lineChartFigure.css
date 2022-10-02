@@ -1,5 +1,6 @@
 .lineChart h3 {
   padding: 29px 0 0 34px;
+
   opacity: 0.5;
   color: white;
 }
@@ -16,7 +17,9 @@
   font-size: 12px;
   padding: 5px;
 }
+
 .lineChart {
   grid-area: line;
+
   overflow: hidden;
 }

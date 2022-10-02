@@ -1,8 +1,10 @@
 import NavIcon from '../NavIcon/NavIcon'
+
 import yoga from '../../Assets/yoga.png'
 import swim from '../../Assets/swim.png'
 import bike from '../../Assets/bike.png'
 import fitness from '../../Assets/fitness.png'
+
 /** @namespace LaterlNav */
 /**
  * React component generating the lateral navigation

@@ -2,6 +2,7 @@
   grid-area: radar;
   place-self: center;
 }
+
 .radar .recharts-polar-grid-angle {
   opacity: 0;
 }
