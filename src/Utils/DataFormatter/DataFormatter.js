@@ -191,7 +191,7 @@ export default DataFormatter
 
 /**
  *  @typedef {Object} Session
- * Infomrmations about the last 10 sessions of the user
+ * Infomrmations about a user's session
  * @property {string} day Date of the session
  * @property {number} kilogram Weight in kg at the date
  * @property {number} calories Amount of burned calories
@@ -199,7 +199,7 @@ export default DataFormatter
 
 /**
  *  @typedef {Object} AvgSessions
- * Informations about the average sessions of the user organized by weekday
+ * Informations about an average user's session
  * @property {string} day Week day (Monday => Sunday)
  * @property {number} sessionLength Average session length
  */
