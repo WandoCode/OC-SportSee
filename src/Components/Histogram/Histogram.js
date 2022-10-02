@@ -16,9 +16,10 @@ import propTypesDef from './Histogram.proptypes'
 
 /** @namespace Histogram */
 /**
- * Function generating the tooltip for Recharts Tooltip component
+ * Function generating the tooltip for [Recharts Tooltip component]{@link https://recharts.org/en-US/api/Tooltip}
  * @memberof Histogram
- * @param {Object[]} payload Informations about the points at the current position defined by Recharts
+ *
+ * @param {Object[]} payload Informations about the point at the current position defined by Recharts
  * @param {string} payload.dataKey Data category of the informations contained in the current object, defined by Recharts
  * @param {string} payload.unit Unit associated to the value in the current object, defined by Recharts
  * @param {number} payload.value Value of current point, defined by Recharts

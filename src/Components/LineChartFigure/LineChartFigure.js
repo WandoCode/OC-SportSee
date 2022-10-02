@@ -11,7 +11,7 @@ import propTypesDef from './LineChartFigure.proptypes'
 
 /** @namespace LineChart */
 /**
- * Function generating the tooltip for Recharts Tooltip component
+ * Function generating the tooltip for [Recharts Tooltip component]{@link https://recharts.org/en-US/api/Tooltip}
  * @memberof LineChart
  * @param {Object[]} payload Informations about the current point defined by Recharts
  * @param {Number} payload[0].value Value of a given point

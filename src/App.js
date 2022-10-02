@@ -9,7 +9,7 @@ import DataFormatter from './Utils/DataFormatter/DataFormatter'
  * @namespace App
  */
 /**
- * Generate the application and launch user's datas load.
+ * Generate the application and launch user's datas loading.
  * @function
  * @memberof App
  */
@@ -18,7 +18,7 @@ function App() {
   const [user, setUser] = useState()
 
   /**
-   * Load formatted user's informations
+   * Create a DataFormatter instance and get user's formatted datas trought it
    * @function App~loadUserInfos
    */
   const loadUserInfos = async () => {

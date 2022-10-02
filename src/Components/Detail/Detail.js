@@ -7,7 +7,7 @@ import propTypesDef from './Detail.proptypes'
  * @param {String} value The value to display
  * @param {String} icon The file of the icon to use
  * @param {String} description The food category
- * @param {String} unit The unit associated the the value
+ * @param {String} unit The unit associated to the value
  */
 function Detail({ value, icon, description, unit }) {
   return (
