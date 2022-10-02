@@ -14,7 +14,7 @@ import DataFormatter from './Utils/DataFormatter/DataFormatter'
  * @memberof App
  */
 function App() {
-  const userId = 18
+  const userId = 12
   const [user, setUser] = useState()
 
   /**

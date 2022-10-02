@@ -97,9 +97,9 @@ class DataFormatter {
   }
 
   /**
-   * Return an array with the 10 last sessions formatted object
+   * Return an array with the 10 last sessions
    * @function
-   * @returns {Session[]} The 10 last sessions array
+   * @returns {Session[]} The 10 last sessions array (unformatted)
    */
   getLastTenSessions = () => {
     let rep
@@ -111,7 +111,20 @@ class DataFormatter {
     } else {
       rep = this.userActivity
     }
-    return rep
+    return this.formatSessions(rep)
+  }
+
+  /**
+   * Return an array with the 10 last sessions formatted object: the day field is only the day number (not the all date)
+   * @function
+   * @returns {Session[]} The 10 last sessions array (formatted)
+   */
+  formatSessions = (sessions) => {
+    const formattedSessions = sessions.map((sess) => {
+      const formattedDay = parseInt(sess.day.split('-')[2])
+      return { ...sess, day: `${formattedDay}` }
+    })
+    return formattedSessions
   }
 
   /**
