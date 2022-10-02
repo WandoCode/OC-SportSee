@@ -9,6 +9,7 @@ This project contain the source code for [SportSee](https://openclassrooms.com/f
 ### Backend
 
 This project is made to be used with an [associated backend](https://github.com/WandoCode/P9-front-end-dashboard).
+Mocked datas are available inside the project for tests and developpment.
 
 # Installation
 
