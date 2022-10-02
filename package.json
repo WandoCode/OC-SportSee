@@ -13,7 +13,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "jsdoc": "jsdoc --readme README.md ./src",
+    "jsdoc": "jsdoc --readme README.md -r ./src",
     "dev": "set REACT_APP_DATAS=mock& npm start"
   },
   "eslintConfig": {
